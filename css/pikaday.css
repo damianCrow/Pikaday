@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@import '../../../styles/base/grid';
+@import '../../../styles/base/colors';
+@import '../../../styles/base/icons';
+@import '../../../styles/base/type';
+
 /*!
  * Pikaday
  * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
@@ -9,11 +14,10 @@
     z-index: 9999;
     display: block;
     position: relative;
-    color: #333;
-    background: #fff;
-    border: 1px solid #ccc;
+    color: $color-regent-gray;
+    background: $color-white;
+    border: 1px solid $color-regent-gray;
     border-bottom-color: #bbb;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -29,7 +33,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-single { *zoom: 1 }
 
 .pika-single.is-hidden {
-    display: none;
+  display: none;
 }
 
 .pika-single.is-bound {
@@ -38,9 +42,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .pika-lendar {
-    float: left;
-    width: 240px;
-    margin: 8px;
+    margin: 18px;
 }
 
 .pika-title {
@@ -60,6 +62,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     line-height: 20px;
     font-weight: bold;
     background-color: #fff;
+    font-family: 'FSAlbert', Arial, sans-serif;
+    font-size: 14px;
 }
 .pika-title select {
     cursor: pointer;
@@ -70,6 +74,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     top: 5px;
     filter: alpha(opacity=0);
     opacity: 0;
+    font-family: 'FSAlbert', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .pika-prev,
@@ -139,8 +145,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .pika-table th {
-    color: #999;
-    font-size: 12px;
+    color: $color-regent-gray;
+    font-size: 14px;
     line-height: 25px;
     font-weight: bold;
     text-align: center;
@@ -156,45 +162,46 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     margin: 0;
     width: 100%;
     padding: 5px;
-    color: #666;
-    font-size: 12px;
+    color: $color-regent-gray;
+    font-size: 14px;
     line-height: 15px;
     text-align: right;
-    background: #f5f5f5;
+    background: $color-white;
+    font-family: 'FSAlbert', Arial, sans-serif;
+    font-size: 14px;
 }
 
 .pika-week {
-    font-size: 11px;
-    color: #999;
+    font-size: 14px;
+    color: $color-regent-gray;
 }
 
 .is-today .pika-button {
-    color: #33aaff;
+    color: $color-regent-gray;
     font-weight: bold;
 }
 
 .is-selected .pika-button {
     color: #fff;
     font-weight: bold;
-    background: #33aaff;
+    background: $color-cerulean;
     box-shadow: inset 0 1px 3px #178fe5;
-    border-radius: 3px;
 }
 
 .is-inrange .pika-button {
-    background: #D5E9F7;
+    background: $color-porcelain;
+    color: $color-outer-space;
 }
 
 .is-startrange .pika-button {
-    color: #fff;
-    background: #6CB31D;
+    color: $color-white;
+    background: $color-cerulean;
     box-shadow: none;
-    border-radius: 3px;
 }
 
 .is-endrange .pika-button {
-    color: #fff;
-    background: #33aaff;
+    color: $color-white;
+    background: $color-cerulean;
     box-shadow: none;
     border-radius: 3px;
 }
@@ -207,15 +214,56 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .pika-button:hover {
-    color: #fff;
-    background: #ff8000;
+    background: $color-cerulean;
     box-shadow: none;
-    border-radius: 3px;
+    color: $color-white;
 }
 
 /* styling for abbr */
 .pika-table abbr {
     border-bottom: none;
     cursor: help;
+    color: $color-outer-space;
 }
+
+.calendar-container {
+  margin-top: 15px;
+}
+
+.calendar-icon {
+  width: 18px;
+  height: 18px;
+  background-color: $color-white;
+  position: absolute;
+  transform: rotateZ(45deg);
+  border-top: 1px solid $color-regent-gray;
+  border-left: 1px solid $color-regent-gray;
+  left: 41%;
+  top: -9px;
+  border-top: 1px solid #919FA6;
+  border-left: 1px solid #919FA6;
+  z-index: 99999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
