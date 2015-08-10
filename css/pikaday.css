@@ -142,6 +142,8 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-table td {
     width: 14.285714285714286%;
     padding: 0;
+    border-right: 4px solid #fff;
+    border-bottom: 4px solid #fff;
 }
 
 .pika-table th {
@@ -203,7 +205,6 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     color: $color-white;
     background: $color-cerulean;
     box-shadow: none;
-    border-radius: 3px;
 }
 
 .is-disabled .pika-button {
@@ -239,7 +240,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
   border-top: 1px solid $color-regent-gray;
   border-left: 1px solid $color-regent-gray;
   left: 41%;
-  top: -9px;
+  top: -10px;
   border-top: 1px solid #919FA6;
   border-left: 1px solid #919FA6;
   z-index: 99999;
